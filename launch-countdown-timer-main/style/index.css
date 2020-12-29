@@ -1,0 +1,161 @@
+:root{
+    --color-white:  hsl(0, 0%, 100%);
+    --color-background: #2F2439;
+    --Very-dark-blue: hsl(235, 16%, 14%);
+    --Very-dark-mostly-black-blue: hsl(234, 17%, 12%);
+    --Dark-desaturated-blue: hsl(236, 21%, 26%);
+    --Grayish-blue: hsl(237, 18%, 59%);
+    --Soft-red: hsl(345, 95%, 68%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Red Hat Text', sans-serif;
+    font-weight: 700;
+}
+
+body{
+    background: linear-gradient(to bottom,  hsl(234, 17%, 12%),  hsl(235, 16%, 14%), hsl(267, 31%, 24%));
+}
+
+.body{
+    margin: 0 auto;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url(../images/bg-stars.svg);
+    position: relative;
+}
+
+.texto-principal{
+    color: var(--color-white);
+    letter-spacing: .4vw;
+    text-transform: uppercase;
+    font-weight: 700;
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    margin-bottom: 20vh;
+}
+
+.center-content{
+    width: 50vw;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.conteudo{
+    margin: 0 auto;
+    width: 40vw;
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 20vh;
+    text-transform: uppercase;
+}
+
+
+.conteudo .center-hours{
+    width: 10vw;
+    height: 20vh;
+    background: var(--Dark-desaturated-blue);
+    border-radius: 9px;  
+    box-shadow: auto; 
+    margin: 10px 10px 30px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    box-shadow: 0px 10px  rgba(0, 0, 0, 0.192);
+}
+
+
+.bolinha-esquerda{
+    position: absolute;
+    width: 1.1vw;
+    height: 1.8vh;
+    border-radius: 50%;
+    background: linear-gradient(to right, hsl(235, 16%, 14%) 50%, #2F2439 100%);
+    left: -6%;
+    top: 47%;
+    z-index: 6;
+}
+
+.conteudo .center-hours .center{
+    width: 100%;
+    height: 0.2vh;
+    background: #000;
+    position: absolute;
+    top: 51%;
+    z-index: 4;
+    opacity: 0.2;
+}
+
+.bolinha-direita{
+    position: absolute;
+    width: 1.1vw;
+    height: 1.8vh;
+    border-radius: 50%;
+    background: linear-gradient(to left, hsl(235, 16%, 14%) 50%, #2F2439 100%);
+    right: -6%;
+    top: 47%;
+    z-index: 6;
+}
+
+.center-content .center-hours .hours{
+    color: var(--Soft-red);
+    font-size: 4.5vw;
+    max-width: 4.5vw;
+    z-index: 3;
+}
+
+#dias{
+    margin-left: -1.5vw;
+}
+
+
+
+#minutos{
+    margin-left: -1vw;
+}
+#segundos{
+    margin-left: -0.8vw;
+}
+
+.conteudo h3{
+    color: var(--Grayish-blue);
+    letter-spacing: 0.4vw;
+    text-align: center;
+}
+
+.base{
+    margin: 0 auto;
+    width: 100vw;
+    height: 25vh;
+    background-image: url(../images/pattern-hills.svg);
+    background-size: 100vw;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 95%;
+}
+
+.base img{
+    margin-left: 1vw; 
+    margin-right: 1vw;
+}
