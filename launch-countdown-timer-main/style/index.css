@@ -145,7 +145,7 @@ body{
 .base{
     margin: 0 auto;
     width: 100vw;
-    height: 20vh;
+    height: 15vh;
     background-image: url(../images/pattern-hills.svg);
     background-size: 100vw;
     background-color: transparent;
@@ -160,4 +160,16 @@ body{
 .base img{
     margin-left: 1vw; 
     margin-right: 1vw;
+}
+
+.attribution{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15vh;
+    width: 100vw;
+    margin-bottom: 2vh;
+}
+.attribution div{
+    width: 60vw;
 }

@@ -1,3 +1,18 @@
+@media only screen and (max-width: 1800px) and (min-width: 1181px){
+    .attribution{
+        margin-top: 10vh;
+        width: 100vw;
+        margin-bottom: 2vh;
+    }
+    .attribution div{
+        width: 60vw;
+    }
+}
+
+
+
+
+
 @media only screen and (max-width: 1180px) and (min-width: 911px){    
     .conteudo .center-hours{
         width: 15vw;
@@ -19,6 +34,18 @@
         margin: 0 auto;
         width: 100vw;
         height: 11vh;
+    }
+
+    .attribution{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 7vh;
+        width: 100vw;
+        margin-bottom: 2vh;
+    }
+    .attribution div{
+        width: 60vw;
     }
     
 }
@@ -70,6 +97,18 @@
         width: 3.5vw;
         margin-left: 2vw; 
         margin-right: 2vw;
+    }
+
+    .attribution{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 13vh;
+        width: 100vw;
+        margin-bottom: 2vh;
+    }
+    .attribution div{
+        width: 60vw;
     }
     
 }
@@ -124,6 +163,18 @@
         margin-left: 3vw; 
         margin-right: 3vw;
     }
+
+    .attribution{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 12vh;
+        width: 100vw;
+        margin-bottom: 2vh;
+    }
+    .attribution div{
+        width: 60vw;
+    }
     
 }
 
@@ -175,6 +226,18 @@
         width: 7vw;
         margin-left: 3vw; 
         margin-right: 3vw;
+    }
+
+    .attribution{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 12vh;
+        width: 100vw;
+        margin-bottom: 2vh;
+    }
+    .attribution div{
+        width: 60vw;
     }
     
 }
@@ -228,6 +291,18 @@
         margin-left: 3vw; 
         margin-right: 3vw;
     }
+
+    .attribution{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 12vh;
+        width: 100vw;
+        margin-bottom: 2vh;
+    }
+    .attribution div{
+        width: 60vw;
+    }
     
 }
 
@@ -273,6 +348,18 @@
         width: 100vw;
         height: 15vh;
         background-size: cover;
+    }
+
+    .attribution{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 12vh;
+        width: 100vw;
+        margin-bottom: 2vh;
+    }
+    .attribution div{
+        width: 60vw;
     }
 
    

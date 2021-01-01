@@ -11,61 +11,38 @@ function atualiza(){
     var segundo = document.querySelector('#segundos');
 
     var data = new Date();
-    var diaDoDia = data.getDate();
+    var diaAtual = data.getDate();
     var dataHora = data.getHours();
     var dataMinuto = data.getMinutes();
     var dataSegundo = data.getSeconds();
 
-    dia.innerHTML = diaDoDia;
-    hora.innerHTML = dataHora;
-    minuto.innerHTML = dataMinuto;
 
-    var cowntdown = dataSegundo;
     var regressivo = 60 - dataSegundo;
     if(regressivo >= 10){
         segundo.innerHTML = regressivo;
-        cowntdown++;
-        regressivo = regressivo - 1;
     } else{
         segundo.innerHTML = '0' + regressivo;
-        cowntdown++;
-        regressivo = regressivo - 1;
     }
 
-    var cowntdownMinute = dataMinuto;
     var regressivoMinute = 60 - dataMinuto;
     if(regressivoMinute >= 10){
         minuto.innerHTML = regressivoMinute;
-        cowntdownMinute++;
-        regressivoMinute = regressivoMinute - 1;
     } else{
         minuto.innerHTML = '0' + regressivoMinute;
-        cowntdownMinute++;
-        regressivoMinute = regressivoMinute - 1;
     }
 
-    var cowntdownHora = dataHora;
     var regressivoHora = 24 - dataHora;
     if(regressivoHora >= 10){
         hora.innerHTML = regressivoHora;
-        cowntdownHora++;
-        regressivoHora = regressivoHora - 1;
     } else {
         hora.innerHTML = '0' + regressivoHora;
-        cowntdownHora++;
-        regressivoHora = regressivoHora - 1;
     }
 
-    var cowntdownDia = diaDoDia;
-    var regressivoDia = 31 - diaDoDia;
+    var regressivoDia = 31 - diaAtual;
     if(regressivoDia >= 10){
         dia.innerHTML = regressivoDia;
-        cowntdownDia++;
-        regressivoDia = regressivoDia - 1;
     } else{
         dia.innerHTML = '0' + regressivoDia;
-        cowntdownDia++;
-        regressivoDia = regressivoDia - 1;
     }
     
     
@@ -75,18 +52,19 @@ function atualiza(){
             divFour.style.transition = '1s';
             divFour.style.transform = 'rotateX(360deg)';
 
-            function resetDiv(){
+            function reverseDiv(){
                 divFour.style.transition = '1s';
                 divFour.style.transform = 'rotateX(-360deg)'; 
                 setTimeout(inicializaRotate, 1000);
             }
 
-            setTimeout(resetDiv, 1000);
+            setTimeout(reverseDiv, 1000);
         }
   
     setTimeout(inicializaRotate, 0);
 
 
+    // minutos
     if(dataSegundo === 59){  
             divTree.style.transition = '1s';
             divTree.style.transform = 'rotateX(360deg)'
@@ -97,26 +75,26 @@ function atualiza(){
     }
 
 
-
+    // horas
     if(dataMinuto === 59){  
-        function minute(){
+        function minuteRotate(){
             divTwo.style.transition = '1s';
             divTwo.style.transform = 'rotateX(360deg)';
         }
-        setTimeout(minute, 59000)
+        setTimeout(minuteRotate, 59000)
     }
     else if(dataMinuto === 1){
         divTwo.style.transition = '0s';
         divTwo.style.transform = 'rotateX(0deg)'
     }
     
-
+    // dias
     if(dataHora === 23){  
-        function horas(){
+        function hoursRotate(){
             divOne.style.transition = '1s';
             divOne.style.transform = 'rotateX(360deg)';
         }
-        setTimeout(horas, 3599000)
+        setTimeout(hoursRotate, 3599000)
     }
 
 
@@ -131,4 +109,3 @@ function atualiza(){
 
 
 window.addEventListener('load', atualiza);
-
